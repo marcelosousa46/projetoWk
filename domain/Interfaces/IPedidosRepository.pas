@@ -17,6 +17,7 @@ type
     function BuscarPedidosPorNomeCliente(const NomeCliente: string): TObjectList<TPedidoCompletoDTO>;
     procedure Commit;
     procedure Rollback;
+    procedure StartTransaction;
   end;
 
 implementation

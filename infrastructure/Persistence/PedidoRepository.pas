@@ -23,8 +23,10 @@ type
     function BuscarPedidoCompletoPorNumero(NumeroPedido: Integer): TPedidoCompletoDTO;
     function CancelarPedido(NumeroPedido: Integer): Boolean;
     function BuscarTodosPedidos: TObjectList<TPedidoCompletoDTO>;
-    function BuscarPedidosPorNomeCliente(const NomeCliente: string): TObjectList<TPedidoCompletoDTO>;    procedure Commit;
+    function BuscarPedidosPorNomeCliente(const NomeCliente: string): TObjectList<TPedidoCompletoDTO>;
+    procedure Commit;
     procedure Rollback;
+    procedure StartTransaction;
   end;
 
 implementation
@@ -265,6 +267,12 @@ procedure TPedidoRepository.Rollback;
 begin
   if FConnection.InTransaction then
     FConnection.Rollback;
+end;
+
+procedure TPedidoRepository.StartTransaction;
+begin
+  if not FConnection.InTransaction then
+      FConnection.StartTransaction;
 end;
 
 function TPedidoRepository.UltimoCodigoPedido: Integer;

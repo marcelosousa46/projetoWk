@@ -63,6 +63,7 @@ var
 numero_pedido: integer;
 begin
   Result := False;
+  FRepository.StartTransaction;
   try
     numero_pedido := FRepository.InserirPedido(Pedido);
 
