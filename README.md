@@ -1,5 +1,5 @@
 # projetoWk
-Aplicativo para avaliação de conheciementos
+Aplicativo para avaliação de conhecimentos
 
 Nete projeto a ideia é a aplicação de SOLID, MVC e Clean Code que significa estruturando o código de forma 
 que cada parte tenha uma única responsabilidade, as camadas (Model, View, Controller/Service)       fiquem 
