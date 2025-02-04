@@ -1,5 +1,5 @@
 # projetoWk
-Aplicativo para avaliação de conheciementos
+Aplicativo para avaliação de conhecimentos
 
 Nete projeto a ideia é a aplicação de SOLID, MVC e Clean Code que significa estruturando o código de forma 
 que cada parte tenha uma única responsabilidade, as camadas (Model, View, Controller/Service)       fiquem 
@@ -12,7 +12,6 @@ O – Open/Closed Principle (Princípio Aberto/Fechado):
     As classes devem ser abertas para extensão, mas fechadas para modificação.
 L – Liskov Substitution Principle (Princípio da Substituição de Liskov):
     Classes derivadas devem poder substituir suas classes base sem alterar o comportamento esperado.
-    Exemplo:
 I – Interface Segregation Principle (Princípio da Segregação de Interface):
     Prefira interfaces específicas e pequenas em vez de uma única interface grande e abrangente.
 D – Dependency Inversion Principle (Princípio da Inversão de Dependência):
